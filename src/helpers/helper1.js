@@ -1,0 +1,1 @@
+//this is file for functions that we use globaly
