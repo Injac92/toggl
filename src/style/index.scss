@@ -3,3 +3,45 @@
 @import "./base/reset";
 @import "./base/utilities";
 @import "./components/components";
+
+// // zelimo da .App na telefonu bude crvena, na tabletu plava, a na desktopu zuta
+
+// // header--button-white
+
+// .header {
+//   display: flex;
+//   width: 100%;
+//   height: 100%;
+//   background: red;
+//   // &--button {
+//   //   border: 1px solid black;
+//   //   &-white {
+//   //     color: white;
+//   //   }
+//   // }
+//   // prvi pristup
+//   // @include respond(tablet)
+//   @media (min-width: 768px) {
+//     display: none;
+//     // &--button {
+//     //   border: 2px;
+//     //   &-white {
+//     //     color: white;
+//     //   }
+//     // }
+//   }
+//   @media (min-width: 1280px) {
+//     display: flex;
+//     // &--button {
+//     //   border: 2px;
+//     //   &-white {
+//     //     color: white;
+//     //   }
+//     // }
+//   }
+// }
+
+// // mobile first
+// // prvo za telefon
+// // tablet
+// // desktop
