@@ -1,0 +1,44 @@
+.landing-page {
+  background-color: $landing-page;
+  height: 812px;
+  flex-direction: column;
+  padding-right: 83px;
+  padding-left: 103px;
+  @extend .flex-vertical-center;
+  &--h1 {
+    color: $white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 189px;
+  }
+  &--p {
+    color: $white;
+    opacity: 0.8;
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  &--button {
+    border-radius: 25px;
+    border: 1px solid $grey;
+    background-color: $red;
+    margin-top: 205px;
+    width: 184px;
+    height: 49px;
+    font-size: 14px;
+    color: $white;
+    font-weight: bold;
+    text-transform: uppercase;
+    &:after {
+      content: "";
+      display: inline-block;
+      top: 0px;
+      right: 0px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 4.5px 0 4.5px 9px;
+      border-color: transparent transparent transparent $white;
+    }
+  }
+}
