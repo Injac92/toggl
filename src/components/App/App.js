@@ -4,12 +4,10 @@ import LandingPage from "../LandingPage/LandingPage";
 import Login from "../Login/Login";
 import Signup from "../Signup/Signup";
 import Dashboard from "../Dashboard/Dashboard";
-import LandingPage from "../LandingPage/LandingPage";
 
 function App() {
   return (
     <div className="App">
-      <LandingPage />
       <Router>
         <Switch>
           <Route exact path="/login" component={Login} />
@@ -19,5 +17,7 @@ function App() {
         </Switch>
       </Router>
     </div>
+  );
+}
 
 export default App;
