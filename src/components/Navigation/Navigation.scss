@@ -1,0 +1,94 @@
+.navigation {
+  padding-top: 33px;
+  padding-left: 36px;
+  background-color: $landing-page;
+  justify-content: space-between;
+  @extend .flex-vertical-center;
+
+  &--info {
+    display: flex;
+
+    &--img {
+      width: 32px;
+      height: 32px;
+    }
+
+    &--h2 {
+      display: inline-flex;
+      align-items: center;
+      padding-left: 8px;
+      font-size: 20px;
+      font-weight: bold;
+      color: $black;
+    }
+  }
+
+  &--hamburger {
+    padding-right: 37px;
+
+    &--ham1 {
+      border: solid 1.5px $black;
+      width: 40px;
+      margin-bottom: 5px;
+    }
+
+    &--ham2 {
+      border: solid 1.5px $black;
+      width: 40px;
+      margin-top: 5px;
+    }
+  }
+
+  &--links {
+    display: none;
+  }
+
+  @include respond(tablet) {
+    padding-left: 80px;
+
+    &--hamburger {
+      display: none;
+    }
+
+    &--links {
+      display: block;
+      padding-right: 61px;
+
+      a {
+        text-decoration: none;
+        color: $black;
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        padding-left: 3px;
+        padding-right: 3px;
+      }
+    }
+  }
+
+  @include respond(desktop) {
+    padding-top: 46px;
+    padding-left: 138px;
+
+    &--info {
+      &--img {
+        width: 40px;
+        height: 40px;
+      }
+
+      &--h2 {
+        font-size: 25px;
+      }
+    }
+
+    &--links {
+      padding-right: 134px;
+
+      a {
+        font-size: 20px;
+        padding-left: 4px;
+        padding-right: 4px;
+      }
+    }
+  }
+}
