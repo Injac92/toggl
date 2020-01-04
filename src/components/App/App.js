@@ -5,8 +5,6 @@ import Login from "../Login/Login";
 import Signup from "../Signup/Signup";
 import Dashboard from "../Dashboard/Dashboard";
 
-var xss = 1;
-
 function App() {
   return (
     <div className="App">

@@ -1,5 +1,6 @@
 import React from "react";
 import Navigation from "../Navigation/Navigation";
+import { Link } from "react-router-dom";
 
 export default function LandingPage() {
   return (
@@ -10,7 +11,9 @@ export default function LandingPage() {
         <p className="landing-page--p">
           Turn your team on to productivity with Toggl the time tracker
         </p>
-        <button className="landing-page--button">Sign up</button>
+        <Link to="/signup" className="landing-page--button">
+          Sign up
+        </Link>
       </div>
     </div>
   );
