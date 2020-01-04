@@ -1,0 +1,87 @@
+.navigation {
+  padding-top: 33px;
+  padding-left: 36px;
+  background-color: $landing-page;
+  justify-content: space-between;
+  @extend .flex-vertical-center;
+
+  .brand {
+    display: flex;
+    &--img {
+      width: 32px;
+      height: 32px;
+    }
+    &--h2 {
+      display: inline-flex;
+      align-items: center;
+      margin-left: 8px;
+      font-size: 20px;
+      font-weight: bold;
+      color: $black;
+    }
+  }
+
+  .hamburger {
+    margin-right: 37px;
+    &--ham1 {
+      border: solid 1.5px $black;
+      width: 40px;
+      margin-bottom: 5px;
+    }
+    &--ham2 {
+      border: solid 1.5px $black;
+      width: 40px;
+      margin-top: 5px;
+    }
+  }
+
+  .menu {
+    display: none;
+  }
+
+  @include respond(tablet) {
+    padding-left: 80px;
+
+    .hamburger {
+      display: none;
+    }
+
+    .menu {
+      display: block;
+      margin-right: 61px;
+      a {
+        text-decoration: none;
+        color: $black;
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 6px;
+        margin-right: 6px;
+      }
+    }
+  }
+
+  @include respond(desktop) {
+    padding-top: 46px;
+    padding-left: 138px;
+
+    .brand {
+      &--img {
+        width: 40px;
+        height: 40px;
+      }
+      &--h2 {
+        font-size: 25px;
+      }
+    }
+
+    .menu {
+      margin-right: 134px;
+      a {
+        font-size: 20px;
+        margin-left: 8px;
+        margin-right: 8px;
+      }
+    }
+  }
+}
