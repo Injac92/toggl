@@ -6,11 +6,11 @@ export default function LandingPage() {
     <div>
       <Navigation />
       <div className="landing-page">
-        <h1 className="landing-page--h1">Where did time go?</h1>
-        <p className="landing-page--p">
+        <h1 className="landing-page__h1">Where did time go?</h1>
+        <p className="landing-page__p">
           Turn your team on to productivity with Toggl the time tracker
         </p>
-        <button className="landing-page--button">Sign up</button>
+        <button className="landing-page__button">Sign up</button>
       </div>
     </div>
   );

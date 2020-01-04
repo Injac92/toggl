@@ -7,11 +7,11 @@
 
   .brand {
     display: flex;
-    &--img {
+    &__img {
       width: 32px;
       height: 32px;
     }
-    &--h2 {
+    &__h2 {
       display: inline-flex;
       align-items: center;
       margin-left: 8px;
@@ -23,12 +23,12 @@
 
   .hamburger {
     margin-right: 37px;
-    &--ham1 {
+    &__ham1 {
       border: solid 1.5px $black;
       width: 40px;
       margin-bottom: 5px;
     }
-    &--ham2 {
+    &__ham2 {
       border: solid 1.5px $black;
       width: 40px;
       margin-top: 5px;
@@ -66,11 +66,11 @@
     padding-left: 138px;
 
     .brand {
-      &--img {
+      &__img {
         width: 40px;
         height: 40px;
       }
-      &--h2 {
+      &__h2 {
         font-size: 25px;
       }
     }
