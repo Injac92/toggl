@@ -7,13 +7,13 @@ function Navigation() {
     <div className="navigation">
       <div className="brand">
         <Link to="#">
-          <img className="brand--img" src={logo} alt="logo" />
+          <img className="brand__img" src={logo} alt="logo" />
         </Link>
-        <h2 className="brand--h2">toggl clone</h2>
+        <h2 className="brand__h2">toggl clone</h2>
       </div>
       <div className="hamburger">
-        <div className="hamburger--ham1"></div>
-        <div className="hamburger--ham2"></div>
+        <div className="hamburger__ham1"></div>
+        <div className="hamburger__ham2"></div>
       </div>
       <div className="menu">
         <Link to="">Feature</Link>

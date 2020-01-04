@@ -7,11 +7,11 @@ export default function LandingPage() {
     <div>
       <Navigation />
       <div className="landing-page">
-        <h1 className="landing-page--h1">Where did time go?</h1>
-        <p className="landing-page--p">
+        <h1 className="landing-page__h1">Where did time go?</h1>
+        <p className="landing-page__p">
           Turn your team on to productivity with Toggl the time tracker
         </p>
-        <Link to="signup" className="landing-page--button">
+        <Link to="signup" className="landing-page__button">
           Sign up
         </Link>
       </div>
