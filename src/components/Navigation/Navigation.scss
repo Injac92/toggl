@@ -5,33 +5,29 @@
   justify-content: space-between;
   @extend .flex-vertical-center;
 
-  &--info {
+  .brand {
     display: flex;
-
     &--img {
       width: 32px;
       height: 32px;
     }
-
     &--h2 {
       display: inline-flex;
       align-items: center;
-      padding-left: 8px;
+      margin-left: 8px;
       font-size: 20px;
       font-weight: bold;
       color: $black;
     }
   }
 
-  &--hamburger {
-    padding-right: 37px;
-
+  .hamburger {
+    margin-right: 37px;
     &--ham1 {
       border: solid 1.5px $black;
       width: 40px;
       margin-bottom: 5px;
     }
-
     &--ham2 {
       border: solid 1.5px $black;
       width: 40px;
@@ -39,29 +35,28 @@
     }
   }
 
-  &--links {
+  .menu {
     display: none;
   }
 
   @include respond(tablet) {
     padding-left: 80px;
 
-    &--hamburger {
+    .hamburger {
       display: none;
     }
 
-    &--links {
+    .menu {
       display: block;
-      padding-right: 61px;
-
+      margin-right: 61px;
       a {
         text-decoration: none;
         color: $black;
         text-align: center;
         font-size: 14px;
         font-weight: bold;
-        padding-left: 3px;
-        padding-right: 3px;
+        margin-left: 6px;
+        margin-right: 6px;
       }
     }
   }
@@ -70,24 +65,22 @@
     padding-top: 46px;
     padding-left: 138px;
 
-    &--info {
+    .brand {
       &--img {
         width: 40px;
         height: 40px;
       }
-
       &--h2 {
         font-size: 25px;
       }
     }
 
-    &--links {
-      padding-right: 134px;
-
+    .menu {
+      margin-right: 134px;
       a {
         font-size: 20px;
-        padding-left: 4px;
-        padding-right: 4px;
+        margin-left: 8px;
+        margin-right: 8px;
       }
     }
   }
