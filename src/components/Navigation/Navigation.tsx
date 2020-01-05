@@ -5,9 +5,13 @@ import HamubrgerMenu from "../HamburgerButton/HamubrgerButton";
 import Menu from "../Menu/Menu";
 import MenuModal from "../MenuModal/MenuModal";
 
-export default class Navigation extends Component {
-  constructor() {
-    super();
+interface State {
+  isOpen: boolean;
+}
+
+export default class Navigation extends Component<{}, State> {
+  constructor(props: {}) {
+    super(props);
     this.state = {
       isOpen: false
     };
@@ -33,7 +37,7 @@ export default class Navigation extends Component {
           toogleButton={this.toggleHamburgerMenu}
         />
         <Menu />
-        {this.state.isOpen ? <MenuModal isOpen={this.state.isOpen} /> : ""}
+        {this.state.isOpen ? <MenuModal /> : ""}
       </div>
     );
   }

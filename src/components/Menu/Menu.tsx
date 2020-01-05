@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Menu(props) {
+export default function Menu(props: {}) {
   return (
     <div className="menu">
       <Link to="">Feature</Link>
