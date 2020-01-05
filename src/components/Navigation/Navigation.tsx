@@ -29,7 +29,7 @@ export default class Navigation extends Component<Props, State> {
     return (
       <div className="navigation">
         <div className="brand">
-          <Link to="#">
+          <Link to="/">
             <img className="brand__img" src={logo} alt="logo" />
           </Link>
           <h2 className="brand__h2">toggl clone</h2>
