@@ -21,20 +21,6 @@
     }
   }
 
-  .hamburger {
-    margin-right: 37px;
-    &__ham1 {
-      border: solid 1.5px $black;
-      width: 40px;
-      margin-bottom: 5px;
-    }
-    &__ham2 {
-      border: solid 1.5px $black;
-      width: 40px;
-      margin-top: 5px;
-    }
-  }
-
   .menu {
     display: none;
   }

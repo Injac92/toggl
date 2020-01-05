@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../images/Group 53@2x.jpg";
 import { Link } from "react-router-dom";
+import HamubrgerMenu from "../HamburgerMenu/HamubrgerMenu";
 
 function Navigation() {
   return (
@@ -11,10 +12,7 @@ function Navigation() {
         </Link>
         <h2 className="brand__h2">toggl clone</h2>
       </div>
-      <div className="hamburger">
-        <div className="hamburger__ham1"></div>
-        <div className="hamburger__ham2"></div>
-      </div>
+      <HamubrgerMenu />
       <div className="menu">
         <Link to="">Feature</Link>
         <Link to="">Pricing</Link>
