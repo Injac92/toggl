@@ -1,0 +1,26 @@
+.hamburger {
+  margin-right: 37px;
+  &__ham1 {
+    border: solid 1.5px $black;
+    width: 40px;
+    margin-bottom: 5px;
+    transition: transform 0.25s;
+  }
+  &__ham2 {
+    border: solid 1.5px $black;
+    width: 40px;
+    margin-top: 5px;
+    transition: transform 0.25s;
+  }
+  &--active {
+    .hamburger__ham1 {
+      transform: rotate(45deg) translateY(6px);
+    }
+    .hamburger__ham2 {
+      transform: rotate(-45deg) translateY(-6px);
+    }
+  }
+  @include respond(tablet) {
+    display: none;
+  }
+}

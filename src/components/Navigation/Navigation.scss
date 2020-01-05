@@ -6,6 +6,7 @@
   position: absolute;
   top: 0;
   width: 100%;
+  z-index: 1;
   @extend .flex-vertical-center;
 
   .brand {
@@ -24,43 +25,11 @@
     }
   }
 
-  .hamburger {
-    margin-right: 37px;
-    &__ham1 {
-      border: solid 1.5px $black;
-      width: 40px;
-      margin-bottom: 5px;
-    }
-    &__ham2 {
-      border: solid 1.5px $black;
-      width: 40px;
-      margin-top: 5px;
-    }
-  }
-
-  .menu {
-    display: none;
-  }
-
   @include respond(tablet) {
     padding-left: 80px;
 
     .hamburger {
       display: none;
-    }
-
-    .menu {
-      display: block;
-      margin-right: 61px;
-      a {
-        text-decoration: none;
-        color: $black;
-        text-align: center;
-        font-size: 14px;
-        font-weight: bold;
-        margin-left: 6px;
-        margin-right: 6px;
-      }
     }
   }
 
@@ -75,15 +44,6 @@
       }
       &__h2 {
         font-size: 25px;
-      }
-    }
-
-    .menu {
-      margin-right: 134px;
-      a {
-        font-size: 20px;
-        margin-left: 8px;
-        margin-right: 8px;
       }
     }
   }
