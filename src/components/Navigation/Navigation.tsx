@@ -9,8 +9,10 @@ interface State {
   isOpen: boolean;
 }
 
-export default class Navigation extends Component<{}, State> {
-  constructor(props: {}) {
+interface Props {}
+
+export default class Navigation extends Component<Props, State> {
+  constructor(props: Props) {
     super(props);
     this.state = {
       isOpen: false
