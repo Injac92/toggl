@@ -1,8 +1,12 @@
 .navigation {
   padding-top: 33px;
   padding-left: 36px;
-  background-color: $landing-page;
+  background-color: transparent;
   justify-content: space-between;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
   @extend .flex-vertical-center;
 
   .brand {
@@ -21,29 +25,11 @@
     }
   }
 
-  .menu {
-    display: none;
-  }
-
   @include respond(tablet) {
     padding-left: 80px;
 
     .hamburger {
       display: none;
-    }
-
-    .menu {
-      display: block;
-      margin-right: 61px;
-      a {
-        text-decoration: none;
-        color: $black;
-        text-align: center;
-        font-size: 14px;
-        font-weight: bold;
-        margin-left: 6px;
-        margin-right: 6px;
-      }
     }
   }
 
@@ -58,15 +44,6 @@
       }
       &__h2 {
         font-size: 25px;
-      }
-    }
-
-    .menu {
-      margin-right: 134px;
-      a {
-        font-size: 20px;
-        margin-left: 8px;
-        margin-right: 8px;
       }
     }
   }
