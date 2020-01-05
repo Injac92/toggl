@@ -1,20 +1,26 @@
 import React, { Component } from "react";
 import logo from "../../images/Group 53@2x.jpg";
 import { Link } from "react-router-dom";
-import HamubrgerMenu from "../HamburgerButton/HamubrgerButton";
+import HamburgerButton from "../HamburgerButton/HamubrgerButton";
 import Menu from "../Menu/Menu";
 import MenuModal from "../MenuModal/MenuModal";
 
-export default class Navigation extends Component {
-  constructor() {
-    super();
+interface State {
+  isOpen: boolean;
+}
+
+interface Props {}
+
+export default class Navigation extends Component<Props, State> {
+  constructor(props: Props) {
+    super(props);
     this.state = {
       isOpen: false
     };
     this.toggleHamburgerMenu = this.toggleHamburgerMenu.bind(this);
   }
 
-  toggleHamburgerMenu() {
+  toggleHamburgerMenu(): void {
     this.setState(prevState => ({
       isOpen: !prevState.isOpen
     }));
@@ -28,12 +34,12 @@ export default class Navigation extends Component {
           </Link>
           <h2 className="brand__h2">toggl clone</h2>
         </div>
-        <HamubrgerMenu
+        <HamburgerButton
           isOpen={this.state.isOpen}
           toogleButton={this.toggleHamburgerMenu}
         />
         <Menu />
-        {this.state.isOpen ? <MenuModal isOpen={this.state.isOpen} /> : ""}
+        {this.state.isOpen ? <MenuModal /> : ""}
       </div>
     );
   }

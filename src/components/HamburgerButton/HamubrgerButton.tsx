@@ -1,6 +1,10 @@
 import React from "react";
+interface PropTypes {
+  isOpen: boolean;
+  toogleButton: () => void;
+}
 
-export default function HamubrgerMenu(props) {
+export default function HamubrgerButton(props: PropTypes) {
   const { isOpen, toogleButton } = props;
   const hamubrgerMenuClass = isOpen
     ? "hamburger hamburger--active"
