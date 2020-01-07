@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import FormButton from "../FormButton/FormButton";
 
 interface Props {
   isLogin: boolean;
@@ -37,6 +38,7 @@ export default function Form(props: Props) {
       <Link to="" className="form__forgot-password">
         Forgot password?
       </Link>
+      <FormButton text="nothin" url="/" color="red" />
     </div>
   );
 }
