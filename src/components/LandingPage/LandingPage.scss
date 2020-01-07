@@ -34,7 +34,7 @@
     color: $white;
     outline: none;
     cursor: pointer;
-    @extend .arrow-right;
+    @extend .arrow-right-white;
   }
   @include respond(tablet) {
     height: 1024px;
