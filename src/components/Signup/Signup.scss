@@ -35,13 +35,13 @@
 }
 
 .signup-part2 {
-  height: 526px;
+  height: 527px;
   background-color: $login-page-grey;
   border-top: 1px solid $grey;
   @include respond(tablet) {
-    height: 670px;
+    height: 671px;
   }
   @include respond(desktop) {
-    height: 993px;
+    height: 994px;
   }
 }
