@@ -1,10 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Navigation from "../Navigation/Navigation";
 
 export default function Signup() {
   return (
-    <div>
+    <>
       <Navigation />
       <div className="signup-page">
         <div className="signup-part1">
@@ -15,6 +14,6 @@ export default function Signup() {
         </div>
         <div className="signup-part2"></div>
       </div>
-    </div>
+    </>
   );
 }
