@@ -1,5 +1,10 @@
 import React from "react";
+import Form from "../Form/Form";
 
 export default function Signup() {
-  return <div>Signup</div>;
+  return (
+    <div>
+      <Form isLogin={false} />
+    </div>
+  );
 }

@@ -1,0 +1,18 @@
+.form {
+  width: 316px;
+  padding: 34px 44px 42px;
+  @extend .abs-horizontal-center;
+  top: 236px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: $white;
+  &__label {
+    display: inline-block;
+  }
+  &__input {
+    &--error {
+    }
+  }
+  &__forgot-password {
+  }
+}
