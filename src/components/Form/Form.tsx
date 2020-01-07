@@ -39,6 +39,9 @@ export default function Form(props: Props) {
         Forgot password?
       </Link>
       <FormButton text="LOG IN" url="/" color="red" />
+      <div className="form__button-divider">
+        <span className="form__button-divider--text">OR</span>
+      </div>
       <FormButton text="LOG IN WITH GOOGLE" url="/" color="white" />
     </div>
   );

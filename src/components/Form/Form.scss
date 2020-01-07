@@ -20,11 +20,44 @@
       margin: 5px 0 8px;
       visibility: hidden;
       color: $input-error;
+      font-size: 12px;
     }
   }
   &__forgot-password {
     display: inline-block;
     margin-top: 9px;
     color: $black;
+  }
+  &__button-divider {
+    display: none;
+    &--text {
+      @extend .abs-horizontal-center;
+    }
+  }
+  @include respond(tablet) {
+    width: 441px;
+    &__input {
+      width: 353px;
+      &--error {
+        margin-bottom: 34px;
+      }
+    }
+    &__forgot-password {
+      margin-top: 25px;
+    }
+    &__button-divider {
+      display: block;
+      position: relative;
+      &:after {
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: black;
+        position: absolute;
+        top: 10px;
+      }
+      &--text {
+      }
+    }
   }
 }
