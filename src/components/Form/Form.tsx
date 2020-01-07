@@ -38,7 +38,8 @@ export default function Form(props: Props) {
       <Link to="" className="form__forgot-password">
         Forgot password?
       </Link>
-      <FormButton text="nothin" url="/" color="red" />
+      <FormButton text="LOG IN" url="/" color="red" />
+      <FormButton text="LOG IN WITH GOOGLE" url="/" color="white" />
     </div>
   );
 }

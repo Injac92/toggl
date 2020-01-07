@@ -13,7 +13,6 @@ FormButton.defaultProps = {
 
 export default function FormButton(props: Props) {
   const { text, url, color } = props;
-  console.log(color);
 
   return (
     <Link to={url} className={`form-button ${color}`}>

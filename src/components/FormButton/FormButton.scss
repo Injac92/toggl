@@ -1,0 +1,11 @@
+.form-button {
+  margin-top: 23px;
+  width: 225px;
+  height: 33px;
+  border-radius: 17px;
+  @extend .flex-center;
+  @extend .arrow-right;
+  &__text {
+    text-decoration: none;
+  }
+}
