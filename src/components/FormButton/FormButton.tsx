@@ -15,8 +15,8 @@ export default function FormButton(props: Props) {
   const { text, url, color } = props;
 
   return (
-    <Link to={url} className={`form-button ${color}`}>
-      <span className="form-buttn__text">{text}</span>
+    <Link to={url} className={`form-button button-${color}`}>
+      {text}
     </Link>
   );
 }

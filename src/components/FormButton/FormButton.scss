@@ -3,9 +3,7 @@
   width: 225px;
   height: 33px;
   border-radius: 17px;
+  border: 1px solid $grey;
+  text-decoration: none;
   @extend .flex-center;
-  @extend .arrow-right;
-  &__text {
-    text-decoration: none;
-  }
 }
