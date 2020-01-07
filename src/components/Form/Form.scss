@@ -10,9 +10,21 @@
     display: inline-block;
   }
   &__input {
+    width: 228px;
+    height: 36px;
+    border: 1px solid $grey;
+    background-color: $login-page-grey;
+    margin-top: 9px;
+    padding-left: 10px;
     &--error {
+      margin: 5px 0 8px;
+      visibility: hidden;
+      color: $input-error;
     }
   }
   &__forgot-password {
+    display: inline-block;
+    margin-top: 9px;
+    color: $black;
   }
 }

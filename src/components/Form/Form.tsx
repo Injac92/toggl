@@ -13,7 +13,7 @@ export default function Form(props: Props) {
         EMAIL ADRESS
       </label>
       <input className="form__input" type="text" id="email" />
-      <p className="form__input--eror">
+      <p className="form__input--error">
         Enter your email adress
         {/*ove error message cemo mzd kasnije i dinamicki ispisivati*/}
       </p>
@@ -21,7 +21,7 @@ export default function Form(props: Props) {
         SET A PASSWORD
       </label>
       <input className="form__input" type="text" id="password" />
-      <p className="form__input--eror">Enter your password</p>
+      <p className="form__input--error">Enter your password</p>
       {isLogin ? null : (
         <React.Fragment>
           <label className="form__label" htmlFor="location">
