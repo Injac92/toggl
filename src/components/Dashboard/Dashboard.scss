@@ -1,0 +1,193 @@
+.dashboard-page {
+  height: 812px;
+  display: flex;
+  @include respond(tablet) {
+    height: 1024px;
+  }
+}
+
+.dashboard-menu {
+  width: 40px;
+  height: 100%;
+  background-color: $dashboard-menu-black;
+  &__logo {
+    &__brand {
+      height: 25px;
+      display: block;
+      margin: auto;
+      margin-top: 8px;
+    }
+    &__name {
+      display: none;
+    }
+  }
+  &__timer {
+    margin-top: 26px;
+    cursor: pointer;
+
+    &__clock {
+      display: block;
+      margin: auto;
+    }
+    &__text {
+      display: none;
+    }
+  }
+
+  @include respond(desktop) {
+    width: 152px;
+    &__logo {
+      display: flex;
+      justify-content: center;
+      margin-top: 12px;
+      text-decoration: none;
+      &__brand {
+        margin: 0;
+      }
+      &__name {
+        display: inline-flex;
+        color: $white;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 5px;
+        padding-left: 6px;
+        padding-right: 8px;
+      }
+    }
+    &__timer {
+      display: flex;
+      justify-content: center;
+      margin: 15px 16px 0 16px;
+      text-decoration: none;
+      background-color: $dashboard-clock-background;
+      border-radius: 11px;
+      &__clock {
+        margin: 0;
+        padding: 4px 0 4px 8px;
+      }
+      &__text {
+        display: inline-flex;
+        color: $white;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 9px;
+        margin-right: 18px;
+        padding-left: 33px;
+      }
+    }
+  }
+}
+
+.dashboard-wrapper {
+  width: 100%;
+  flex-direction: column;
+}
+
+.dashboard-title {
+  height: 50px;
+  justify-content: space-between;
+  @extend .flex-vertical-center;
+  box-shadow: $dashboard-shadow-box;
+  -webkit-box-shadow: $dashboard-shadow-box;
+  -moz-box-shadow: $dashboard-shadow-box;
+  &__h3 {
+    color: $dashboard-text-color;
+    height: 23px;
+    font-size: 14px;
+    margin: 13px 0 20px 13px;
+  }
+  &__timer {
+    display: flex;
+    p {
+      color: $dashboard-text-color;
+      height: 16px;
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 13px;
+    }
+    img {
+      margin: 8px 15px 15px 15px;
+    }
+  }
+
+  @include respond(tablet) {
+    &__h3 {
+      margin: 15px 0 11px 41px;
+    }
+    &__timer {
+      p {
+        margin-top: 16px;
+      }
+      img {
+        margin-top: 11px;
+        margin-right: 80px;
+      }
+    }
+  }
+}
+
+.dashboard-subtitle {
+  &__h3 {
+    color: $dashboard-text-color;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 21px 0 21px 15px;
+    @include respond(tablet) {
+      margin-left: 41px;
+    }
+  }
+}
+
+.dashboard-content {
+  border: 1px solid $dashboard-border-grey;
+  box-shadow: $dashboard-shadow-box;
+  padding-bottom: 21px;
+  margin-bottom: 33px;
+  &__days {
+    display: flex;
+    justify-content: space-between;
+    height: 17px;
+    margin-top: 9px;
+    margin-bottom: 8px;
+    &__h4 {
+      font-size: 12px;
+      color: $black;
+      margin-left: 16px;
+      @include respond(tablet) {
+        margin-left: 41px;
+      }
+    }
+    &__p {
+      font-size: 12px;
+      font-weight: bold;
+      color: $black;
+      margin-right: 23px;
+      @include respond(tablet) {
+        margin-right: 80px;
+      }
+    }
+  }
+  &__projects {
+    @extend .flex-vertical-center;
+    justify-content: space-between;
+    height: 24px;
+    border-bottom: 1px solid $dashboard-border-grey;
+    &__h4 {
+      font-size: 12px;
+      color: $dashboard-text-color;
+      margin-left: 16px;
+      @include respond(tablet) {
+        margin-left: 41px;
+      }
+    }
+    &__p {
+      font-size: 12px;
+      font-weight: bold;
+      color: $dashboard-text-color;
+      margin-right: 23px;
+      @include respond(tablet) {
+        margin-right: 80px;
+      }
+    }
+  }
+}
