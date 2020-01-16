@@ -1,6 +1,7 @@
 .dashboard-page {
   height: 812px;
   display: flex;
+  background-color: $dashboard-background;
   @include respond(tablet) {
     height: 1024px;
   }
@@ -38,8 +39,7 @@
     width: 152px;
     &__logo {
       display: flex;
-      justify-content: center;
-      margin-top: 12px;
+      margin: 12px 16px 0 12px;
       text-decoration: none;
       &__brand {
         margin: 0;
@@ -50,14 +50,13 @@
         font-size: 14px;
         font-weight: bold;
         margin-top: 5px;
-        padding-left: 6px;
+        padding-left: 8px;
         padding-right: 8px;
       }
     }
     &__timer {
       display: flex;
-      justify-content: center;
-      margin: 15px 16px 0 16px;
+      margin: 15px 16px 0 12px;
       text-decoration: none;
       background-color: $dashboard-clock-background;
       border-radius: 11px;
@@ -67,11 +66,11 @@
       }
       &__text {
         display: inline-flex;
+        align-items: center;
         color: $white;
         font-size: 14px;
         font-weight: bold;
-        margin-top: 9px;
-        margin-right: 18px;
+        padding-right: 21px;
         padding-left: 33px;
       }
     }
@@ -134,60 +133,6 @@
     margin: 21px 0 21px 15px;
     @include respond(tablet) {
       margin-left: 41px;
-    }
-  }
-}
-
-.dashboard-content {
-  border: 1px solid $dashboard-border-grey;
-  box-shadow: $dashboard-shadow-box;
-  padding-bottom: 21px;
-  margin-bottom: 33px;
-  &__days {
-    display: flex;
-    justify-content: space-between;
-    height: 17px;
-    margin-top: 9px;
-    margin-bottom: 8px;
-    &__h4 {
-      font-size: 12px;
-      color: $black;
-      margin-left: 16px;
-      @include respond(tablet) {
-        margin-left: 41px;
-      }
-    }
-    &__p {
-      font-size: 12px;
-      font-weight: bold;
-      color: $black;
-      margin-right: 23px;
-      @include respond(tablet) {
-        margin-right: 80px;
-      }
-    }
-  }
-  &__projects {
-    @extend .flex-vertical-center;
-    justify-content: space-between;
-    height: 24px;
-    border-bottom: 1px solid $dashboard-border-grey;
-    &__h4 {
-      font-size: 12px;
-      color: $dashboard-text-color;
-      margin-left: 16px;
-      @include respond(tablet) {
-        margin-left: 41px;
-      }
-    }
-    &__p {
-      font-size: 12px;
-      font-weight: bold;
-      color: $dashboard-text-color;
-      margin-right: 23px;
-      @include respond(tablet) {
-        margin-right: 80px;
-      }
     }
   }
 }
