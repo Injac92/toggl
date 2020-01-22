@@ -33,12 +33,8 @@ export default function Dashboard() {
         <div className="dashboard-subtitle">
           <h3 className="dashboard-subtitle__h3">Visualization disabled</h3>
         </div>
-        <div className="dashboard-content">
-          <DashboardContent />
-        </div>
-        <div className="dashboard-content">
-          <DashboardContent />
-        </div>
+        <DashboardContent />
+        <DashboardContent />
       </div>
     </div>
   );
