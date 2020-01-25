@@ -8,6 +8,9 @@ interface Props {
 
 export default function Form(props: Props) {
   const { isLogin } = props;
+  const url = "/";
+  const textOne = isLogin ? "LOG IN" : "SIGN UP FOR FREE";
+  const textTwo = isLogin ? "LOG IN WITH GOOGLE" : "SIGN UP WITH GOOGLE";
   return (
     <div className="form">
       <label className="form__label" htmlFor="email">
@@ -38,11 +41,13 @@ export default function Form(props: Props) {
       <Link to="" className="form__forgot-password">
         Forgot password?
       </Link>
-      <FormButton text="LOG IN" url="/" color="red" />
+      <FormButton text={textOne} url={url} color="red" />
       <div className="form__button-divider">
+        <span className="form__button-divider--line"></span>
         <span className="form__button-divider--text">OR</span>
+        <span className="form__button-divider--line"></span>
       </div>
-      <FormButton text="LOG IN WITH GOOGLE" url="/" color="white" />
+      <FormButton text={textTwo} url={url} color="white" />
     </div>
   );
 }

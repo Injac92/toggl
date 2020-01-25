@@ -2,12 +2,12 @@
   width: 316px;
   padding: 34px 44px 42px;
   @extend .abs-horizontal-center;
-  top: 236px;
+  top: 235px;
   font-size: 14px;
   font-weight: bold;
   background-color: $white;
   &__label {
-    display: inline-block;
+    display: block;
   }
   &__input {
     width: 228px;
@@ -42,21 +42,46 @@
         margin-bottom: 34px;
       }
     }
-    &__forgot-password {
-      margin-top: 25px;
+    &__button-divider {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 16px;
+      margin-top: 22px;
+      &--text {
+        color: #010101;
+      }
+      &--line {
+        height: 2px;
+        width: 161px;
+        background-color: $grey;
+      }
+    }
+  }
+  @include respond(desktop) {
+    width: 653px;
+    padding: 51px 65px 113px;
+    top: 343px;
+    &__label {
+      font-size: 20px;
+    }
+    &__input {
+      width: 523px;
+      margin-top: 14px;
+      &--error {
+        font-size: 14px;
+        margin-top: 14px;
+        margin-bottom: 30px;
+      }
+    }
+    &--error {
+      margin-top: 0 46px;
     }
     &__button-divider {
-      display: block;
-      position: relative;
-      &:after {
-        content: "";
-        height: 1px;
-        width: 100%;
-        background-color: black;
-        position: absolute;
-        top: 10px;
-      }
-      &--text {
+      height: 23px;
+      margin-top: 29px;
+      &--line {
+        width: 247px;
       }
     }
   }
