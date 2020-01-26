@@ -39,7 +39,7 @@ export default class Navigation extends Component<Props, State> {
           toogleButton={this.toggleHamburgerMenu}
         />
         <Menu />
-        {this.state.isOpen ? <MenuModal /> : ""}
+        {this.state.isOpen ? <MenuModal /> : null}
       </div>
     );
   }

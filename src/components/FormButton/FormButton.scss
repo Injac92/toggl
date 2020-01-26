@@ -1,0 +1,20 @@
+.form-button {
+  margin-top: 23px;
+  width: 225px;
+  height: 33px;
+  border-radius: 17px;
+  border: 1px solid $grey;
+  text-decoration: none;
+  @extend .flex-center;
+  @include respond(tablet) {
+    width: 350px;
+  }
+  @include respond(desktop) {
+    width: 518px;
+    height: 48px;
+    margin-top: 50px;
+    &:last-of-type {
+      margin-top: 30px; // los dizajn pa sam stavio otp
+    }
+  }
+}

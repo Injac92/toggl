@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Navigation from "../Navigation/Navigation";
+import Form from "../Form/Form";
 
 export default function Login() {
   return (
     <div>
       <Navigation />
+      <Form isLogin={true} />
       <div className="login-page">
         <div className="login-part1">
           <h1 className="login-part1__h1">Get tracking</h1>

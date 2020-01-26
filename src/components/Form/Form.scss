@@ -1,0 +1,88 @@
+.form {
+  width: 316px;
+  padding: 34px 44px 42px;
+  @extend .abs-horizontal-center;
+  top: 235px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: $white;
+  &__label {
+    display: block;
+  }
+  &__input {
+    width: 228px;
+    height: 36px;
+    border: 1px solid $grey;
+    background-color: $login-page-grey;
+    margin-top: 9px;
+    padding-left: 10px;
+    &--error {
+      margin: 5px 0 8px;
+      visibility: hidden;
+      color: $input-error;
+      font-size: 12px;
+    }
+  }
+  &__forgot-password {
+    display: inline-block;
+    margin-top: 9px;
+    color: $black;
+  }
+  &__button-divider {
+    display: none;
+    &--text {
+      @extend .abs-horizontal-center;
+    }
+  }
+  @include respond(tablet) {
+    width: 441px;
+    &__input {
+      width: 353px;
+      &--error {
+        margin-bottom: 34px;
+      }
+    }
+    &__button-divider {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 16px;
+      margin-top: 22px;
+      &--text {
+        color: #010101;
+      }
+      &--line {
+        height: 2px;
+        width: 161px;
+        background-color: $grey;
+      }
+    }
+  }
+  @include respond(desktop) {
+    width: 653px;
+    padding: 51px 65px 113px;
+    top: 343px;
+    &__label {
+      font-size: 20px;
+    }
+    &__input {
+      width: 523px;
+      margin-top: 14px;
+      &--error {
+        font-size: 14px;
+        margin-top: 14px;
+        margin-bottom: 30px;
+      }
+    }
+    &--error {
+      margin-top: 0 46px;
+    }
+    &__button-divider {
+      height: 23px;
+      margin-top: 29px;
+      &--line {
+        width: 247px;
+      }
+    }
+  }
+}

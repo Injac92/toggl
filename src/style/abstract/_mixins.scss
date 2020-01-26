@@ -9,16 +9,16 @@ $breakpoint arguement choices:
 - tablet
 - desktop
 */
-$test: 300px;
+
 @mixin respond($breakpoint) {
-    @if $breakpoint == tablet {
-        @media only screen and (min-width: 768px) { 
-            @content 
-        };
+  @if $breakpoint == tablet {
+    @media only screen and (min-width: 768px) {
+      @content;
     }
-    @if $breakpoint == desktop {
-        @media only screen and (min-width: 1280px) {
-            @content
-         };
+  }
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 1280px) {
+      @content;
     }
+  }
 }
